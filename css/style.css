@@ -1,0 +1,203 @@
+ body {
+            font-family: "Nerko One", cursive;
+            background-color: #272b30;
+            background-image: url(https://i.imgur.com/YOeZp5s.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            background-position: center top;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #3a497b !important;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 20px 100px;
+            width: auto;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+            font-family: 'Nerko One', cursive;
+            font-size: 1.5rem;
+        }
+
+        .nav-item a {
+            color: white !important;
+            transition: 0.3s;
+        }
+
+        .nav-item a:hover {
+            color: #0099cc !important;
+            transform: scale(1.1);
+        }
+
+        .nav-item a.active {
+            color: #0099cc !important;
+        }
+
+        /* Home Section - Centered */
+        #home-section {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #home-section .container {
+            max-width: 1400px;
+        }
+
+        /* Game Cards Container - 4 Columns */
+        #games-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Responsive - 3 columns on medium screens */
+        @media (max-width: 1200px) {
+            #games-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Responsive - 2 columns on tablets */
+        @media (max-width: 900px) {
+            #games-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .navbar {
+                margin: 20px;
+            }
+        }
+
+        /* Responsive - 1 column on mobile */
+        @media (max-width: 600px) {
+            #games-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Game Card */
+        .game-card {
+            width: 300px;
+            background-color: #2c3139;
+            border-radius: 15px;
+            overflow: hidden;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-card .card-img-top {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            margin: 0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .badge-free {
+            background-color: #4a6792;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            border: none;
+            font-family: "Nerko One", cursive;
+        }
+
+        .card-text {
+            color: #b0b0b0;
+            margin: 12px 0 15px 0;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            min-height: 45px;
+        }
+
+        .card-footer-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .card-genre, .card-platform {
+            color: white;
+        }
+
+        .details-img {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+
+        .details-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .btn-close-details {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .btn-close-details:hover {
+            background: #c0392b;
+            transform: translateX(-5px);
+        }
+
+        .screenshot-img {
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .screenshot-img:hover {
+            transform: scale(1.05);
+        }
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .details-info p {
+            margin-bottom: 10px;
+        }
+
+        .system-requirements {
+            background: rgba(52, 73, 94, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
